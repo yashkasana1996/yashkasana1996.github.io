@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yashwant Kumar Gurjar — AI tools for operations-heavy businesses</title>
+<meta name="description" content="I map messy operational workflows and turn them into working AI tools — document Q&A, estimation automation, pipeline dashboards. Former Indian Army Captain. Available for freelance and remote work.">
+<meta property="og:title" content="Yashwant Kumar Gurjar — AI tools for operations-heavy businesses">
+<meta property="og:description" content="Process first, then the tool. Live demos of document Q&A, BOQ pricing automation and pipeline dashboards.">
+<meta property="og:image" content="https://yashkasana1996.github.io/assets/bpc.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf7;--card:#ffffff;--ink:#141c28;--muted:#5c6575;--line:#e6e3dc;--navy:#1b2f4d;--gold:#b8892b;--gold-soft:#f5ecd9;--chip:#eef1f6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e131a;--card:#151c26;--ink:#e8ebef;--muted:#9ca5b4;--line:#253042;--navy:#a9c2e8;--gold:#d9ad55;--gold-soft:#2a2416;--chip:#1c2533}}
+:root[data-theme="dark"]{--bg:#0e131a;--card:#151c26;--ink:#e8ebef;--muted:#9ca5b4;--line:#253042;--navy:#a9c2e8;--gold:#d9ad55;--gold-soft:#2a2416;--chip:#1c2533}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.serif{font-family:"Source Serif 4",Georgia,serif}
+nav.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;gap:22px;height:60px}
+nav.top .name{font-weight:700;text-decoration:none;letter-spacing:-.01em}
+nav.top .links{display:flex;gap:18px;margin-left:auto;font-size:14px}
+nav.top .links a{text-decoration:none;color:var(--muted)}nav.top .links a:hover{color:var(--ink)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:8px;padding:5px 9px;font:inherit;font-size:13px;cursor:pointer}
+@media (max-width:720px){nav.top .links a.hide-sm{display:none}}
+.hero{padding:80px 0 56px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(34px,5.4vw,56px);line-height:1.08;letter-spacing:-.02em;margin:14px 0 18px;max-width:900px}
+.hero h1 em{font-style:normal;color:var(--navy);border-bottom:3px solid var(--gold)}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:720px;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;border:1px solid var(--line);background:var(--card);text-decoration:none;font-weight:600;font-size:15px}
+.btn.p{background:var(--navy);border-color:var(--navy);color:var(--bg)}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:52px}
+.proof div{background:var(--card);padding:18px}
+.proof b{display:block;font-size:22px;letter-spacing:-.01em}
+.proof span{font-size:13px;color:var(--muted)}
+@media (max-width:720px){.proof{grid-template-columns:1fr 1fr}}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:32px;letter-spacing:-.015em;margin:8px 0 10px}
+.sub{color:var(--muted);max-width:680px;margin:0 0 30px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.services{grid-template-columns:1fr}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.svc h3{margin:0 0 6px;font-size:17px}
+.svc p{margin:0;color:var(--muted);font-size:14.5px}
+.svc .for{margin-top:12px;font-size:12.5px;color:var(--ink);background:var(--gold-soft);display:inline-block;padding:3px 9px;border-radius:999px}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin:0 0 44px}
+.proj:nth-child(even) .shot{order:2}
+@media (max-width:860px){.proj{grid-template-columns:1fr}.proj:nth-child(even) .shot{order:0}}
+.shot{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:0 12px 30px -18px rgba(20,28,40,.35)}
+.shot img{display:block;width:100%;height:auto}
+.proj h3{font-family:"Source Serif 4",Georgia,serif;font-size:25px;margin:6px 0 8px;letter-spacing:-.01em}
+.proj .problem{color:var(--muted);margin:0 0 12px}
+.proj ul{margin:0 0 16px;padding-left:18px}
+.proj li{margin:4px 0;font-size:15px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.tags span{font-size:12px;background:var(--chip);border-radius:6px;padding:3px 8px;color:var(--muted)}
+.links2{display:flex;gap:10px;flex-wrap:wrap}
+.links2 a{font-size:14px;font-weight:600;text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:1px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{border-top:3px solid var(--gold);padding-top:12px}
+.step h4{margin:0 0 4px;font-size:15px}
+.step h4::before{counter-increment:s;content:"0" counter(s) "  ";color:var(--gold);font-weight:700}
+.step p{margin:0;color:var(--muted);font-size:14px}
+.timeline{display:grid;gap:0}
+.tl{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tl:last-child{border-bottom:none}
+.tl .when{color:var(--muted);font-size:14px}
+.tl h4{margin:0;font-size:16px}
+.tl p{margin:4px 0 0;color:var(--muted);font-size:14.5px}
+@media (max-width:620px){.tl{grid-template-columns:1fr;gap:2px}}
+.creds{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.creds span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:4px 11px;background:var(--card)}
+.contact{background:var(--navy);color:var(--bg);border-radius:18px;padding:40px;display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:center}
+.contact h2{color:var(--bg);margin-top:0}
+.contact p{opacity:.85;margin:0}
+.contact .ways{display:grid;gap:10px}
+.contact .ways a{display:flex;justify-content:space-between;gap:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:12px 14px;font-weight:600;font-size:15px;overflow-wrap:anywhere}
+@media (max-width:760px){.contact{grid-template-columns:1fr;padding:26px}}
+footer{color:var(--muted);font-size:13px;padding:30px 0 50px}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="name" href="#">Yashwant Kumar Gurjar</a>
+  <div class="links"><a class="hide-sm" href="#services">Services</a><a href="#work">Work</a><a class="hide-sm" href="#about">About</a><a href="#contact">Contact</a></div>
+  <button id="theme" aria-label="Toggle light or dark theme">Light / Dark</button>
+</div></nav>
+
+<header class="wrap hero">
+  <div class="eyebrow">AI workflow builder · Operations · Strategy</div>
+  <h1>I turn messy operational workflows into <em>working AI tools</em>.</h1>
+  <p class="lead">Former Indian Army Captain with consulting and in-house strategy experience. I sit with the people doing the work, map how it actually runs, and then build the tool that removes the grind — document Q&amp;A assistants, estimation automation, pipeline dashboards and reporting — using Claude, Gemini and Python.</p>
+  <div class="cta">
+    <a class="btn p" href="#work">See live demos</a>
+    <a class="btn" href="mailto:yashkasana6991@gmail.com?subject=Project%20enquiry">Start a project</a>
+    <a class="btn" href="https://github.com/yashkasana1996">GitHub</a>
+  </div>
+  <div class="proof">
+    <div><b>3</b><span>working tools with live demos</span></div>
+    <div><b>Full day → automated</b><span>manual pipeline reporting replaced by a console</span></div>
+    <div><b>840</b><span>personnel administered as Battalion Adjutant</span></div>
+    <div><b>ISB</b><span>Applied Business Analytics</span></div>
+  </div>
+</header>
+
+<section id="services"><div class="wrap">
+  <div class="eyebrow">What I can build for you</div>
+  <h2>Practical AI for teams that run on spreadsheets, PDFs and email</h2>
+  <p class="sub">Fixed-scope projects, usually delivered in one to four weeks, with a working demo early so you can steer.</p>
+  <div class="services">
+    <div class="svc"><h3>Document Q&amp;A assistants</h3><p>Ask questions of contracts, tenders, policies or manuals and get answers that cite the clause. Your documents stay private.</p><span class="for">Bids · legal · compliance · HR</span></div>
+    <div class="svc"><h3>Workflow automation</h3><p>Take a repetitive Excel or email process — quotes, estimates, reconciliations, reports — and turn it into a tool with checks and an audit trail.</p><span class="for">Ops · finance · procurement</span></div>
+    <div class="svc"><h3>Dashboards &amp; trackers</h3><p>One screen for a manager: pipeline, deadlines, status, alerts, plus reports that write themselves. Runs in a browser, no IT project needed.</p><span class="for">Founders · directors · PMOs</span></div>
+    <div class="svc"><h3>AI adoption for small teams</h3><p>Find the three tasks where AI saves real hours, set up the prompts and tools, and train the team so it sticks.</p><span class="for">SMEs · agencies · clinics</span></div>
+    <div class="svc"><h3>Process mapping &amp; SOPs</h3><p>Map how work really flows, find the bottlenecks, write clear SOPs and the metrics to track — the groundwork any automation needs.</p><span class="for">Operations · scaling startups</span></div>
+    <div class="svc"><h3>Research &amp; analysis</h3><p>Structured desk research, market and competitor scans, and data analysis turned into decision-ready briefs and decks.</p><span class="for">Consulting · strategy teams</span></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="eyebrow">Selected work</div>
+  <h2>Built for real operations problems</h2>
+  <p class="sub">Each started as a tool for a live business need. The public versions run on fictional data — try them in your browser.</p>
+
+  <article class="proj">
+    <div class="shot"><img src="assets/rfp.webp" alt="RFP Document Q&A answering a question about liquidated damages with clause citations" loading="lazy" width="1200" height="760"></div>
+    <div>
+      <div class="eyebrow">Document AI</div>
+      <h3>RFP Document Q&amp;A</h3>
+      <p class="problem">Bid teams read 100-page tenders to find deadlines, penalties and submission rules — and two readers come away with two different lists.</p>
+      <ul><li>Upload PDF, Word or Excel; ask in plain English</li><li>Answers cite the exact passage; click to verify</li><li>Bid snapshot of every date, amount and percentage — no AI needed</li></ul>
+      <div class="tags"><span>Claude API</span><span>Gemini API</span><span>BM25 retrieval</span><span>pdf.js</span><span>JavaScript</span></div>
+      <div class="links2"><a href="https://yashkasana1996.github.io/rfp-document-qa/">Live demo →</a><a href="https://github.com/yashkasana1996/rfp-document-qa">Code</a></div>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div class="shot"><img src="assets/boq.webp" alt="BOQ Pricing Agent showing a filled bill of quantities" loading="lazy" width="1200" height="712"></div>
+    <div>
+      <div class="eyebrow">Workflow automation</div>
+      <h3>BOQ Pricing Agent</h3>
+      <p class="problem">Construction estimators price thousands of tender lines by hand: match vendor quotes, pick the lowest, apply markup, fill the client's file — and redo it every revision.</p>
+      <ul><li>Reads messy quotes, matches specs, sends doubtful matches to human review</li><li>L1 pricing, markup and GST with margin shown at every level</li><li>Revision diffs and target-price back-solving with margin-floor warnings</li></ul>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>openpyxl</span><span>pytest</span><span>Claude Code</span></div>
+      <div class="links2"><a href="https://github.com/yashkasana1996/boq-pricing-agent">Code &amp; screenshots →</a></div>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div class="shot"><img src="assets/bpc.webp" alt="Bid Pipeline Console dashboard with pipeline value, due dates and alerts" loading="lazy" width="1200" height="760"></div>
+    <div>
+      <div class="eyebrow">Management dashboard</div>
+      <h3>Bid Pipeline Console</h3>
+      <p class="problem">A regional director had no single view of live tenders across cities — status came from phone calls and a report typed by hand twice a day.</p>
+      <ul><li>Pipeline, weighted value, due-this-week and win rate by region</li><li>Stage board, bid / no-bid scorecard, automatic alerts</li><li>Morning and evening reports generated from the data</li></ul>
+      <div class="tags"><span>JavaScript</span><span>Single HTML file</span><span>Offline-first</span><span>Data viz</span></div>
+      <div class="links2"><a href="https://yashkasana1996.github.io/bid-pipeline-console/">Live demo →</a><a href="https://github.com/yashkasana1996/bid-pipeline-console">Code</a></div>
+    </div>
+  </article>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">How I work</div>
+  <h2>Process first, then the tool</h2>
+  <p class="sub">Most AI projects fail on adoption, not technology. I build around how your people already work.</p>
+  <div class="steps">
+    <div class="step"><h4>Map</h4><p>A short call and a walkthrough of the real process, files and pain points.</p></div>
+    <div class="step"><h4>Prototype</h4><p>A working demo on your sample data within days, not a slide deck.</p></div>
+    <div class="step"><h4>Harden</h4><p>Edge cases, checks, human-review steps and tests — no silent wrong numbers.</p></div>
+    <div class="step"><h4>Hand over</h4><p>Documentation, a short training session and support while the team adopts it.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow">Background</div>
+  <h2>Army discipline, consulting method, builder's habits</h2>
+  <p class="sub">I build with AI coding tools (Claude Code, Claude and Gemini APIs) rather than from a software-engineering background — my edge is understanding the business problem and shipping something people actually use.</p>
+  <div class="timeline">
+    <div class="tl"><div class="when">May – Oct 2026</div><div><h4>Assistant Manager, Office of the City Director — design &amp; build firm, Mumbai</h4><p>Built the bid pipeline console, estimation tooling and a GenAI document Q&amp;A tool; modelled the end-to-end bid and contracts process.</p></div></div>
+    <div class="tl"><div class="when">Apr – Jun 2025</div><div><h4>Consulting intern — PwC US Acceleration Centers, Bengaluru</h4><p>Operations and supply-chain transformation; built no-code Tulip apps that roughly halved data-capture effort.</p></div></div>
+    <div class="tl"><div class="when">Dec 2020 – Jun 2023</div><div><h4>Captain (Operations &amp; Administration), Indian Army — Battalion Adjutant</h4><p>Administered 840 personnel across a 350 km area; cut leave turnaround by about 85% and raised operational readiness from 85% to 100%.</p></div></div>
+  </div>
+  <div class="creds"><span>B.E. Civil Engineering</span><span>ISB — Applied Business Analytics</span><span>Indian Military Academy</span><span>Columbia — Prompt Engineering</span><span>DeepLearning.AI — AI for Everyone</span><span>McKinsey Forward</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <div><h2>Have a process that eats hours every week?</h2><p>Send me a two-line description and a sample file. I'll reply with how I'd approach it, a timeline and a fixed quote. Open to freelance projects and remote roles.</p></div>
+    <div class="ways">
+      <a href="mailto:yashkasana6991@gmail.com?subject=Project%20enquiry"><span>Email</span><span>yashkasana6991@gmail.com</span></a>
+      <a href="https://linkedin.com/in/yashwant-gurjar96"><span>LinkedIn</span><span>yashwant-gurjar96</span></a>
+      <a href="https://github.com/yashkasana1996"><span>GitHub</span><span>yashkasana1996</span></a>
+    </div>
+  </div>
+</div></section>
+
+<footer class="wrap">© 2026 Yashwant Kumar Gurjar · Mumbai, India · Working with clients worldwide (IST, UTC+5:30)</footer>
+<script>
+document.getElementById("theme").onclick=()=>{const r=document.documentElement;const d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=d?"light":"dark"};
+</script>
+</body>
+</html>
